@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 rospy.init_node('send')
 pub = rospy.Publisher('send_img', Image, queue_size=1)
 rate = rospy.Rate(10)
-n = 0
 cap = cv2.VideoCapture(0)
 
 bridge = CvBridge()

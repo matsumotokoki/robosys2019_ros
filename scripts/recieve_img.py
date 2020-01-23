@@ -6,8 +6,6 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-image = []
-
 def cb(message):
     bridge = CvBridge()
     message = bridge.imgmsg_to_cv2(message)
